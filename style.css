@@ -1,0 +1,52 @@
+.container {
+  display:grid;
+  grid-template-areas:
+    "header header"
+    "context1 side"
+    "context2 side"
+    "footer footer";
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 3fr 2fr 1fr;
+}
+
+body {
+  background-color: orange;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  background-color: purple;
+  text-align: center;
+}
+
+.box1 {
+  grid-area: context1;
+  background-color: green;
+  text-align: center;
+}
+
+.box2 {
+  grid-area: side;
+  background-color: pink;
+  text-align: center;
+  border: 3px solid red;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: darkcyan;
+}
+.ListContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+
+.ListItem {
+  list-style-type: none;
+}
